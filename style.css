@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.original{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.original img{
+    margin: 0 150px;
+}
+
+.grayscale{
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.grayscale img{
+    filter: grayscale(100%);
+    margin: 0 150px;
+}
+
+.blur{
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.blur img{
+    filter: blur(5px);
+    margin: 0 150px;
+}
+
+/* Image Text */
+.container{
+    position: relative;
+    /* color: white; */
+    text-align: center;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 30px;
+    left: 16px;
+    font-size: 20px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 20px;
+}
+  
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;
+}
+  
+.bottom-right {
+    position: absolute;
+    bottom: 30px;
+    right: 16px;
+    font-size: 20px;
+}
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+/* Image Text Blocks */
+
+.text-block{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    position: absolute;
+    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Transparent Image Text */
+.container1{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    opacity: 0.5;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    bottom: 0;
+    font-size: 20px;
+}
